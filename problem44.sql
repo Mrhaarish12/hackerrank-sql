@@ -10,7 +10,7 @@
 
 select COUNTRY.CONTINENT, Floor(avg(CITY.POPULATION))
 from COUNTRY,CITY
-where COUNTRY.Code = CITY.CountryCode
+where COUNTRY.Code = CITY.CountryCodeproble
 group by COUNTRY.CONTINENT;
 -- Line: 1 Col: 53
 -- Run Code Submit CodeUpload Code as File
