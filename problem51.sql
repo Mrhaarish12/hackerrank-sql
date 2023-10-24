@@ -57,5 +57,4 @@ where P.is_evil = 0 and W.coins_needed = (select min(coins_needed)
                                              from Wands as X
                                              join Wands_Property as Y
                                              on (X.code = Y.code)
-                                             where X.power = W.power and X.age = Y=P.age)
-order by W.power desc, P.age desc;
+                                             where X.power = W.power and Y.age = P.age)
